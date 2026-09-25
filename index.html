@@ -3,298 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kopi Sudut Salatiga - Kedai Kopi & Ruang Nugas</title>
+  <title>Kedai Kopi Rido Salatiga</title>
   
-  <!-- Bootstrap 5 CSS CDN -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   
   <!-- CSS Eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 1. NAVBAR RESPONSIF -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">☕ Kopi Sudut</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand" href="#">Kedai Kopi Rido</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
           <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#keunggulan">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimoni">Ulasan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#reservasi">Booking Meja</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- 2. HERO SECTION -->
-  <header id="beranda" class="hero-section text-center">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3">📍 Dekat Kampus UIN Salatiga</span>
-          <h1 class="display-5 fw-bold mb-3">Nongkrong Santai, Nugas Tenang</h1>
-          <p class="lead mb-4">
-            Kedai kopi sederhana di Salatiga dengan racikan kopi lokal, camilan ramah kantong, colokan di setiap meja, dan WiFi stabil buat teman ngerjain tugas.
-          </p>
-          <div class="d-flex justify-content-center gap-2">
-            <a href="#menu" class="btn btn-warning btn-lg fw-semibold">Lihat Menu</a>
-            <a href="#reservasi" class="btn btn-outline-light btn-lg">Pesan Meja</a>
-          </div>
-        </div>
-      </div>
+  <div class="container mt-4">
+
+    <!-- Hero Section Sederhana -->
+    <div id="beranda" class="hero-box text-center">
+      <h1 class="fw-bold">Selamat Datang di Kedai Kopi Rido</h1>
+      <p class="lead">Kedai kopi santai di Salatiga dengan harga terjangkau untuk mahasiswa.</p>
+      <a href="#menu" class="btn btn-primary me-2">Lihat Daftar Menu</a>
+      <a href="#kontak" class="btn btn-outline-secondary">Pesan / Kontak</a>
     </div>
-  </header>
 
-  <!-- 3. TENTANG KEDAI -->
-  <section id="tentang" class="py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <h2 class="fw-bold mb-3">Tempat Cerita & Selesaikan Tugas</h2>
-          <p class="text-secondary">
-            Kopi Sudut lahir dari kebutuhan sederhana teman-teman mahasiswa yang sering kebingungan cari tempat nugas yang tenang, colokan listrik yang nggak rebutan, dan harga kopi yang aman buat dompet tanggal tua.
-          </p>
-          <p class="text-secondary">
-            Bukan sekadar kedai, kami menyediakan ruang kerja santai dengan suasana adem khas Salatiga. Duduk berjam-jam sambil buka laptop tetap kami sambut dengan ramah.
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <div class="card border-0 shadow-sm p-4 bg-white">
-            <h5 class="fw-bold mb-3">Informasi Kedai</h5>
-            <ul class="list-unstyled mb-0 text-secondary">
-              <li class="mb-2"><i class="bi bi-clock me-2 text-warning"></i> Buka Setiap Hari: 10.00 - 23.00 WIB</li>
-              <li class="mb-2"><i class="bi bi-geo-alt me-2 text-warning"></i> Jl. Kartini No. 24, Sidorejo, Kota Salatiga</li>
-              <li class="mb-2"><i class="bi bi-wifi me-2 text-warning"></i> Kecepatan WiFi: s/d 50 Mbps</li>
-              <li><i class="bi bi-wallet2 me-2 text-warning"></i> Pembayaran: Tunai & QRIS (Gopay/OVO/BCA/Seabank)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- Tentang Kami -->
+    <div id="tentang" class="mb-5">
+      <h3 class="border-bottom pb-2 mb-3">Tentang Kami</h3>
+      <p>
+        Kedai Kopi Rido didirikan untuk menyediakan tempat nongkrong dan ngerjain tugas yang nyaman bagi mahasiswa di sekitar Salatiga. Kami menyajikan aneka kopi dan makanan ringan dengan harga yang pas di kantong pelajar.
+      </p>
     </div>
-  </section>
 
-  <!-- 4. MENU PILIHAN (CARDS BOOTSTRAP) -->
-  <section id="menu" class="py-5 bg-white border-top border-bottom">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Menu Pilihan</h2>
-        <p class="text-secondary">Minuman dan camilan yang paling sering jadi teman nugas.</p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Card 1 -->
+    <!-- Daftar Menu (Cards) -->
+    <div id="menu" class="mb-5">
+      <h3 class="border-bottom pb-2 mb-4">Daftar Menu Favorit</h3>
+      <div class="row g-3">
+        
         <div class="col-md-4">
-          <div class="card h-100 menu-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Es Kopi Susu">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="Kopi Susu Gula Aren">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="card-title fw-bold mb-0">Kopi Susu Sudut</h5>
-                <span class="badge bg-success">Favorit</span>
-              </div>
-              <p class="card-text text-secondary small">Espresso ganda, susu segar, dan sirup gula aren asli. Manis pas dan ramah di lambung.</p>
-            </div>
-            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-              <span class="fw-bold text-dark fs-5">Rp 15.000</span>
-              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
+              <h5 class="card-title">Kopi Susu Gula Aren</h5>
+              <p class="card-text text-muted">Perpaduan kopi hitam, susu segar, dan manisnya gula aren alami.</p>
+              <p class="fw-bold text-primary">Rp 15.000</p>
+              <a href="#kontak" class="btn btn-sm btn-outline-primary">Pesan</a>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="card h-100 menu-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Manual Brew V60">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="Kopi Tubruk Lokal">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="card-title fw-bold mb-0">Manual Brew V60</h5>
-                <span class="badge bg-secondary">Single Origin</span>
-              </div>
-              <p class="card-text text-secondary small">Seduhan filter pour-over dengan biji kopi lereng Merbabu. Rasa bersih dengan aroma buah segar.</p>
-            </div>
-            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-              <span class="fw-bold text-dark fs-5">Rp 18.000</span>
-              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
+              <h5 class="card-title">Kopi Tubruk Robusta</h5>
+              <p class="card-text text-muted">Kopi hitam khas nusantara dengan aroma kuat dan rasa pekat.</p>
+              <p class="fw-bold text-primary">Rp 10.000</p>
+              <a href="#kontak" class="btn btn-sm btn-outline-primary">Pesan</a>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="col-md-4">
-          <div class="card h-100 menu-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1584776296944-ab6fb57b0bdd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Roti Panggang Cokelat">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1584776296944-ab6fb57b0bdd?w=500&auto=format&fit=crop&q=60" class="card-img-top" alt="Roti Bakar">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="card-title fw-bold mb-0">Roti Bakar Keju</h5>
-                <span class="badge bg-warning text-dark">Cemilan</span>
-              </div>
-              <p class="card-text text-secondary small">Roti tebal bakar renyah dengan isian selai cokelat pekat dan taburan keju cheddar melimpah.</p>
-            </div>
-            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-              <span class="fw-bold text-dark fs-5">Rp 14.000</span>
-              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
+              <h5 class="card-title">Roti Bakar Cokelat Keju</h5>
+              <p class="card-text text-muted">Roti panggang hangat dengan isian selai cokelat dan parutan keju gurih.</p>
+              <p class="fw-bold text-primary">Rp 12.000</p>
+              <a href="#kontak" class="btn btn-sm btn-outline-primary">Pesan</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- 5. FASILITAS / KEUNGGULAN (GRID SYSTEM 3 KOLOM) -->
-  <section id="keunggulan" class="py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Fasilitas Nugas</h2>
-        <p class="text-secondary">Didesain agar ngerjain tugas kuliah terasa lebih lancar.</p>
-      </div>
-      
-      <div class="row g-4 text-center">
+    <!-- Keunggulan (List Sederhana) -->
+    <div id="keunggulan" class="mb-5">
+      <h3 class="border-bottom pb-2 mb-3">Keunggulan Kedai Kami</h3>
+      <div class="row g-3">
         <div class="col-md-4">
-          <div class="feature-box h-100 shadow-sm">
-            <div class="fs-1 text-warning mb-2"><i class="bi bi-plug"></i></div>
-            <h5 class="fw-bold">Colokan di Setiap Meja</h5>
-            <p class="text-secondary small mb-0">Nggak perlu rebutan colokan. Bawa laptop, tablet, dan smartphone sekaligus tetap aman.</p>
+          <div class="p-3 border rounded bg-white">
+            <h5 class="fw-bold">1. Harga Mahasiswa</h5>
+            <p class="mb-0 text-muted">Semua menu disesuaikan dengan kantong mahasiswa, mulai Rp 10.000-an.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-box h-100 shadow-sm">
-            <div class="fs-1 text-warning mb-2"><i class="bi bi-wifi"></i></div>
-            <h5 class="fw-bold">WiFi Cepat & Stabil</h5>
-            <p class="text-secondary small mb-0">Browsing jurnal, meeting Zoom kelompok, atau submit tugas e-campus tanpa hambatan.</p>
+          <div class="p-3 border rounded bg-white">
+            <h5 class="fw-bold">2. Ada Colokan & WiFi</h5>
+            <p class="mb-0 text-muted">Tersedia jaringan internet dan colokan listrik di setiap area meja untuk nugas.</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-box h-100 shadow-sm">
-            <div class="fs-1 text-warning mb-2"><i class="bi bi-tags"></i></div>
-            <h5 class="fw-bold">Harga Ramah Kantong</h5>
-            <p class="text-secondary small mb-0">Menu mulai Rp 12.000, bayar non-tunai via QRIS juga bebas biaya admin.</p>
+          <div class="p-3 border rounded bg-white">
+            <h5 class="fw-bold">3. Tempat Bersih & Nyaman</h5>
+            <p class="mb-0 text-muted">Ruangan bersih dan tenang untuk diskusi santai maupun kerja tugas mandiri.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- 6. ULASAN PELANGGAN -->
-  <section id="testimoni" class="py-5 bg-white border-top border-bottom">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Kata Teman Nugas</h2>
-        <p class="text-secondary">Apa kata mereka yang sering mampir ke Kopi Sudut.</p>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-5">
-          <div class="p-4 border rounded-3 bg-light h-100">
-            <p class="fst-italic text-secondary mb-3">
-              "Tempat paling nyaman buat bikin laporan praktikum. Lagunya nggak berisik, colokan banyak, dan kopinya pas manisnya."
-            </p>
-            <div class="fw-bold">Dimas Kurniawan</div>
-            <small class="text-muted">Mahasiswa FEBI UIN Salatiga</small>
+    <!-- Testimoni / Ulasan -->
+    <div id="testimoni" class="mb-5">
+      <h3 class="border-bottom pb-2 mb-3">Ulasan Pengunjung</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="border p-3 rounded bg-white">
+            <p class="mb-1">"Kopinya enak, tempatnya tenang buat ngerjain tugas kuliah bareng temen."</p>
+            <small class="text-muted">- Bagas (Mahasiswa UIN Salatiga)</small>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="p-4 border rounded-3 bg-light h-100">
-            <p class="fst-italic text-secondary mb-3">
-              "Kalo nugas kelompok pasti larinya ke sini. Meja besarnya enak dan parkirnya luas. Roti bakarnya juga porsi ngenyangin."
-            </p>
-            <div class="fw-bold">Anisa Rahma</div>
-            <small class="text-muted">Mahasiswi Salatiga</small>
+        <div class="col-md-6">
+          <div class="border p-3 rounded bg-white">
+            <p class="mb-1">"Roti bakarnya pas buat ganjel perut pas nugas malem, harganya juga murah."</p>
+            <small class="text-muted">- Siti (Mahasiswi)</small>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- 7. FORM RESERVASI MEJA -->
-  <section id="reservasi" class="py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <div class="card border-0 shadow-sm p-4 bg-white">
-            <h3 class="fw-bold mb-2 text-center">Reservasi Meja / Kontak</h3>
-            <p class="text-secondary text-center small mb-4">Mau nugas bareng kelompok? Booking meja dulu biar disiapkan tempat dekat colokan.</p>
-            
-            <form>
-              <div class="mb-3">
-                <label for="namaLengkap" class="form-label fw-semibold">Nama Lengkap</label>
-                <input type="text" class="form-control" id="namaLengkap" placeholder="Contoh: Rido Azimi" required>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="noWhatsapp" class="form-label fw-semibold">Nomor WhatsApp</label>
-                  <input type="tel" class="form-control" id="noWhatsapp" placeholder="0822xxxxxxxx" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="jumlahOrang" class="form-label fw-semibold">Jumlah Orang</label>
-                  <select class="form-select" id="jumlahOrang">
-                    <option selected value="1">1 Orang (Meja Personal)</option>
-                    <option value="2">2 - 3 Orang</option>
-                    <option value="4">4 - 6 Orang (Meja Kelompok)</option>
-                    <option value="7">> 6 Orang</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="waktuDatang" class="form-label fw-semibold">Rencana Waktu Datang</label>
-                <input type="datetime-local" class="form-control" id="waktuDatang" required>
-              </div>
-
-              <div class="mb-3">
-                <label for="catatan" class="form-label fw-semibold">Catatan (Opsional)</label>
-                <textarea class="form-control" id="catatan" rows="3" placeholder="Contoh: Mau ngerjain tugas kelompok, tolong meja dekat colokan..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-warning w-100 py-2 fw-semibold">Kirim Permintaan Booking</button>
-            </form>
+    <!-- Form Kontak / Pemesanan -->
+    <div id="kontak" class="mb-5">
+      <h3 class="border-bottom pb-2 mb-3">Hubungi Kami / Pesan Meja</h3>
+      <div class="row">
+        <div class="col-md-7">
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Masukkan nama" required>
+            </div>
+            <div class="mb-3">
+              <label for="nohp" class="form-label">Nomor WhatsApp / HP</label>
+              <input type="text" class="form-control" id="nohp" placeholder="08xxxxxxxxxx" required>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan / Rencana Pesanan</label>
+              <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis pesan atau reservasi meja..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+        <div class="col-md-5 mt-4 mt-md-0">
+          <div class="p-3 border rounded bg-white">
+            <h5>Alamat & Kontak</h5>
+            <p class="mb-1"><strong>Alamat:</strong> Jl. Tentara Pelajar No. 12, Salatiga</p>
+            <p class="mb-1"><strong>Jam Buka:</strong> 10.00 - 22.00 WIB</p>
+            <p class="mb-1"><strong>WhatsApp:</strong> 0822-7845-xxxx</p>
+            <p class="mb-0"><strong>Instagram:</strong> @kedaikopirido</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- 8. FOOTER -->
-  <footer class="pt-5 pb-3">
+  </div>
+
+  <!-- Footer Sederhana -->
+  <footer class="text-center">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-5">
-          <h5 class="fw-bold text-white mb-3">☕ Kopi Sudut Salatiga</h5>
-          <p class="small">
-            Kedai kopi lokal sederhana untuk teman belajar, diskusi kelompok, dan istirahat santai di Salatiga.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <h6 class="text-white fw-bold mb-3">Jam Buka</h6>
-          <p class="small mb-1">Senin - Jumat: 10.00 - 23.00 WIB</p>
-          <p class="small mb-0">Sabtu - Minggu: 09.00 - 24.00 WIB</p>
-        </div>
-        <div class="col-md-4">
-          <h6 class="text-white fw-bold mb-3">Alamat & Kontak</h6>
-          <p class="small mb-1">Jl. Kartini No. 24, Sidorejo, Salatiga</p>
-          <p class="small mb-1">WhatsApp: 0822-7845-xxxx</p>
-          <p class="small text-muted mb-0">Instagram: @kopisudut.salatiga</p>
-        </div>
-      </div>
-      
-      <hr class="border-secondary mt-4 mb-3">
-      
-      <div class="text-center small text-secondary">
-        <p class="mb-0">&copy; 2026 Kopi Sudut Salatiga — Praktikum Web Development Lab.</p>
-      </div>
+      <p class="mb-1">Kedai Kopi Rido - Salatiga</p>
+      <small>&copy; 2026 Tugas Web Development Lab - Rido Azimi (63050250037)</small>
     </div>
   </footer>
 
-  <!-- Bootstrap 5 JS Bundle CDN -->
+  <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
