@@ -1,0 +1,64 @@
+/* 
+  Custom CSS Eksternal - Dorizz Creative
+  Memenuhi kaidah Pertemuan 3 & 4:
+  1. Box Model (padding, margin, border-radius)
+  2. CSS Custom Variables (:root)
+  3. Transisi interaktif halus untuk hover card
+*/
+
+:root {
+  --primary-color: #0d6efd;
+  --primary-dark: #0a58ca;
+  --bg-hero: linear-gradient(135deg, #0a2540 0%, #0d6efd 100%);
+}
+
+/* Haluskan pergerakan scroll saat mengklik menu navigasi */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: var(--bg-hero);
+  min-height: 75vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* CARD LAYANAN (HOVER INTERACTION) */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ffffff;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(13, 110, 253, 0.12) !important;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AVATAR INISIAL TESTIMONI */
+.avatar {
+  width: 46px;
+  height: 46px;
+  font-size: 0.9rem;
+}
+
+/* FOOTER LINK */
+.hover-link:hover {
+  color: #ffffff !important;
+  transition: color 0.2s ease;
+}
