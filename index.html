@@ -3,187 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dorizz Creative - Solusi Branding Digital UMKM</title>
+  <title>Kopi Sudut Salatiga - Kedai Kopi & Ruang Nugas</title>
   
   <!-- Bootstrap 5 CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
   <!-- Bootstrap Icons CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   
-  <!-- Custom CSS Eksternal -->
+  <!-- CSS Eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- KOMPONEN A: NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+  <!-- 1. NAVBAR RESPONSIF -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">
-        <i class="bi bi-rocket-takeoff me-2"></i>Dorizz Creative
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold" href="#">☕ Kopi Sudut</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#hero">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tentang">Tentang</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#layanan">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#keunggulan">Keunggulan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimoni">Testimoni</a>
-          </li>
-          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a class="btn btn-warning fw-semibold px-3" href="#kontak">Hubungi Kami</a>
-          </li>
+      
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keunggulan">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Ulasan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservasi">Booking Meja</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- KOMPONEN B: HERO SECTION -->
-  <header id="hero" class="hero-section text-white d-flex align-items-center">
-    <div class="container text-center py-5">
+  <!-- 2. HERO SECTION -->
+  <header id="beranda" class="hero-section text-center">
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fw-semibold">
-            Partner Pertumbuhan Bisnis Digital
-          </span>
-          <h1 class="display-4 fw-bold mb-3">
-            Tingkatkan Omzet UMKM Lewat Identitas Brand yang Kuat
-          </h1>
-          <p class="lead mb-4 text-white-50">
-            Dorizz Creative membantu pelaku usaha lokal membangun citra profesional, menjangkau lebih banyak pelanggan di media sosial, dan memiliki landing page berkonversi tinggi.
+        <div class="col-lg-8">
+          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3">📍 Dekat Kampus UIN Salatiga</span>
+          <h1 class="display-5 fw-bold mb-3">Nongkrong Santai, Nugas Tenang</h1>
+          <p class="lead mb-4">
+            Kedai kopi sederhana di Salatiga dengan racikan kopi lokal, camilan ramah kantong, colokan di setiap meja, dan WiFi stabil buat teman ngerjain tugas.
           </p>
-          <div class="d-flex justify-content-center gap-3">
-            <a href="#layanan" class="btn btn-primary btn-lg fw-semibold px-4">Lihat Layanan</a>
-            <a href="#kontak" class="btn btn-outline-light btn-lg fw-semibold px-4">Konsultasi Gratis</a>
+          <div class="d-flex justify-content-center gap-2">
+            <a href="#menu" class="btn btn-warning btn-lg fw-semibold">Lihat Menu</a>
+            <a href="#reservasi" class="btn btn-outline-light btn-lg">Pesan Meja</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- KOMPONEN C: TENTANG KAMI -->
-  <section id="tentang" class="py-5 bg-light">
-    <div class="container py-4">
+  <!-- 3. TENTANG KEDAI -->
+  <section id="tentang" class="py-5">
+    <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-6">
-          <div class="p-4 p-md-5 bg-white rounded-3 shadow-sm border-start border-primary border-4">
-            <h6 class="text-primary fw-bold text-uppercase mb-2">Tentang Dorizz Creative</h6>
-            <h2 class="fw-bold mb-3">Solusi Praktis Digitalisasi Bisnis Lokal</h2>
-            <p class="text-secondary mb-3">
-              Didirikan oleh mahasiswa Bisnis Digital, Dorizz Creative hadir untuk menjawab keresahan pelaku UMKM yang sering kali kesulitan bersaing di ranah digital karena kendala desain, konten, dan keterbatasan platform promosi.
-            </p>
-            <p class="text-secondary mb-0">
-              Kami menggabungkan strategi bisnis digital berbasis data dengan kreativitas visual untuk memberikan dampak penjualan nyata bagi usaha Anda.
-            </p>
-          </div>
+          <h2 class="fw-bold mb-3">Tempat Cerita & Selesaikan Tugas</h2>
+          <p class="text-secondary">
+            Kopi Sudut lahir dari kebutuhan sederhana teman-teman mahasiswa yang sering kebingungan cari tempat nugas yang tenang, colokan listrik yang nggak rebutan, dan harga kopi yang aman buat dompet tanggal tua.
+          </p>
+          <p class="text-secondary">
+            Bukan sekadar kedai, kami menyediakan ruang kerja santai dengan suasana adem khas Salatiga. Duduk berjam-jam sambil buka laptop tetap kami sambut dengan ramah.
+          </p>
         </div>
         <div class="col-lg-6">
-          <div class="row g-3 text-center">
-            <div class="col-6">
-              <div class="p-4 bg-white rounded-3 shadow-sm">
-                <h3 class="fw-bold text-primary mb-1">50+</h3>
-                <p class="text-muted small mb-0">UMKM Terbantu</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-4 bg-white rounded-3 shadow-sm">
-                <h3 class="fw-bold text-primary mb-1">120+</h3>
-                <p class="text-muted small mb-0">Konten Diproduksi</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-4 bg-white rounded-3 shadow-sm">
-                <h3 class="fw-bold text-primary mb-1">98%</h3>
-                <p class="text-muted small mb-0">Klien Puas</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="p-4 bg-white rounded-3 shadow-sm">
-                <h3 class="fw-bold text-primary mb-1">24/7</h3>
-                <p class="text-muted small mb-0">Pendampingan</p>
-              </div>
-            </div>
+          <div class="card border-0 shadow-sm p-4 bg-white">
+            <h5 class="fw-bold mb-3">Informasi Kedai</h5>
+            <ul class="list-unstyled mb-0 text-secondary">
+              <li class="mb-2"><i class="bi bi-clock me-2 text-warning"></i> Buka Setiap Hari: 10.00 - 23.00 WIB</li>
+              <li class="mb-2"><i class="bi bi-geo-alt me-2 text-warning"></i> Jl. Kartini No. 24, Sidorejo, Kota Salatiga</li>
+              <li class="mb-2"><i class="bi bi-wifi me-2 text-warning"></i> Kecepatan WiFi: s/d 50 Mbps</li>
+              <li><i class="bi bi-wallet2 me-2 text-warning"></i> Pembayaran: Tunai & QRIS (Gopay/OVO/BCA/Seabank)</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KOMPONEN D: 3 PRODUK / LAYANAN (CARD BOOTSTRAP) -->
-  <section id="layanan" class="py-5">
-    <div class="container py-4">
+  <!-- 4. MENU PILIHAN (CARDS BOOTSTRAP) -->
+  <section id="menu" class="py-5 bg-white border-top border-bottom">
+    <div class="container">
       <div class="text-center mb-5">
-        <h6 class="text-primary fw-bold text-uppercase">Layanan Kami</h6>
-        <h2 class="fw-bold">Solusi Terpadu untuk UMKM Berkembang</h2>
-        <p class="text-secondary">Pilih paket layanan yang paling sesuai dengan kebutuhan pertumbuhan bisnis Anda</p>
+        <h2 class="fw-bold">Menu Pilihan</h2>
+        <p class="text-secondary">Minuman dan camilan yang paling sering jadi teman nugas.</p>
       </div>
 
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card">
-            <div class="card-body p-4 text-center">
-              <div class="service-icon mb-3 bg-primary-subtle text-primary mx-auto rounded-circle">
-                <i class="bi bi-instagram fs-2"></i>
+          <div class="card h-100 menu-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Es Kopi Susu">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Kopi Susu Sudut</h5>
+                <span class="badge bg-success">Favorit</span>
               </div>
-              <h5 class="card-title fw-bold">Social Media Branding</h5>
-              <p class="card-text text-secondary">
-                Pengelolaan akun Instagram dan TikTok secara profesional, mulai dari penataan feed, riset hashtag, hingga copywriting interaktif.
-              </p>
-              <h6 class="text-primary fw-bold mt-3 mb-0">Mulai Rp 350.000 / bln</h6>
+              <p class="card-text text-secondary small">Espresso ganda, susu segar, dan sirup gula aren asli. Manis pas dan ramah di lambung.</p>
             </div>
-            <div class="card-footer bg-transparent border-0 pb-4 text-center">
-              <a href="#kontak" class="btn btn-outline-primary btn-sm px-3 rounded-pill">Pilih Layanan</a>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+              <span class="fw-bold text-dark fs-5">Rp 15.000</span>
+              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card border-top border-primary border-3">
-            <div class="card-body p-4 text-center">
-              <div class="service-icon mb-3 bg-warning-subtle text-warning mx-auto rounded-circle">
-                <i class="bi bi-laptop fs-2 text-dark"></i>
+          <div class="card h-100 menu-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Manual Brew V60">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Manual Brew V60</h5>
+                <span class="badge bg-secondary">Single Origin</span>
               </div>
-              <h5 class="card-title fw-bold">Landing Page UMKM</h5>
-              <p class="card-text text-secondary">
-                Pembuatan website satu halaman yang cepat, responsif di HP, dan dirancang khusus untuk mengarahkan pengunjung langsung ke WhatsApp bisnis.
-              </p>
-              <h6 class="text-primary fw-bold mt-3 mb-0">Mulai Rp 500.000 / web</h6>
+              <p class="card-text text-secondary small">Seduhan filter pour-over dengan biji kopi lereng Merbabu. Rasa bersih dengan aroma buah segar.</p>
             </div>
-            <div class="card-footer bg-transparent border-0 pb-4 text-center">
-              <a href="#kontak" class="btn btn-primary btn-sm px-3 rounded-pill">Paling Populer</a>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+              <span class="fw-bold text-dark fs-5">Rp 18.000</span>
+              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card">
-            <div class="card-body p-4 text-center">
-              <div class="service-icon mb-3 bg-primary-subtle text-primary mx-auto rounded-circle">
-                <i class="bi bi-palette fs-2"></i>
+          <div class="card h-100 menu-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1584776296944-ab6fb57b0bdd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Roti Panggang Cokelat">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Roti Bakar Keju</h5>
+                <span class="badge bg-warning text-dark">Cemilan</span>
               </div>
-              <h5 class="card-title fw-bold">Desain Visual & Logo</h5>
-              <p class="card-text text-secondary">
-                Pembuatan logo profesional, katalog produk digital, kartu nama, dan panduan palet warna agar brand Anda mudah diingat pelanggan.
-              </p>
-              <h6 class="text-primary fw-bold mt-3 mb-0">Mulai Rp 250.000 / paket</h6>
+              <p class="card-text text-secondary small">Roti tebal bakar renyah dengan isian selai cokelat pekat dan taburan keju cheddar melimpah.</p>
             </div>
-            <div class="card-footer bg-transparent border-0 pb-4 text-center">
-              <a href="#kontak" class="btn btn-outline-primary btn-sm px-3 rounded-pill">Pilih Layanan</a>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+              <span class="fw-bold text-dark fs-5">Rp 14.000</span>
+              <a href="#reservasi" class="btn btn-sm btn-outline-dark">Pesan</a>
             </div>
           </div>
         </div>
@@ -191,164 +149,113 @@
     </div>
   </section>
 
-  <!-- KOMPONEN E: 3 KEUNGGULAN (VALUE PROPOSITION) -->
-  <section id="keunggulan" class="py-5 bg-light">
-    <div class="container py-4">
+  <!-- 5. FASILITAS / KEUNGGULAN (GRID SYSTEM 3 KOLOM) -->
+  <section id="keunggulan" class="py-5">
+    <div class="container">
       <div class="text-center mb-5">
-        <h6 class="text-primary fw-bold text-uppercase">Kenapa Memilih Kami</h6>
-        <h2 class="fw-bold">Keunggulan Dorizz Creative</h2>
-        <p class="text-secondary">Kami berfokus pada hasil nyata yang mempermudah operasional bisnis harian Anda</p>
+        <h2 class="fw-bold">Fasilitas Nugas</h2>
+        <p class="text-secondary">Didesain agar ngerjain tugas kuliah terasa lebih lancar.</p>
       </div>
-
-      <div class="row g-4">
+      
+      <div class="row g-4 text-center">
         <div class="col-md-4">
-          <div class="d-flex align-items-start p-4 bg-white rounded-3 shadow-sm h-100">
-            <div class="feature-icon me-3 text-primary fs-3">
-              <i class="bi bi-wallet2"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Harga Terjangkau UMKM</h5>
-              <p class="text-secondary small mb-0">Biaya transparan, tanpa biaya langganan tersembunyi, dan disesuaikan dengan skala modal usaha rintisan.</p>
-            </div>
+          <div class="feature-box h-100 shadow-sm">
+            <div class="fs-1 text-warning mb-2"><i class="bi bi-plug"></i></div>
+            <h5 class="fw-bold">Colokan di Setiap Meja</h5>
+            <p class="text-secondary small mb-0">Nggak perlu rebutan colokan. Bawa laptop, tablet, dan smartphone sekaligus tetap aman.</p>
           </div>
         </div>
-
         <div class="col-md-4">
-          <div class="d-flex align-items-start p-4 bg-white rounded-3 shadow-sm h-100">
-            <div class="feature-icon me-3 text-primary fs-3">
-              <i class="bi bi-graph-up-arrow"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Berorientasi Penjualan</h5>
-              <p class="text-secondary small mb-0">Bukan sekadar desain estetik, tapi setiap elemen dibuat untuk meningkatkan konversi dan klik pembeli.</p>
-            </div>
+          <div class="feature-box h-100 shadow-sm">
+            <div class="fs-1 text-warning mb-2"><i class="bi bi-wifi"></i></div>
+            <h5 class="fw-bold">WiFi Cepat & Stabil</h5>
+            <p class="text-secondary small mb-0">Browsing jurnal, meeting Zoom kelompok, atau submit tugas e-campus tanpa hambatan.</p>
           </div>
         </div>
-
         <div class="col-md-4">
-          <div class="d-flex align-items-start p-4 bg-white rounded-3 shadow-sm h-100">
-            <div class="feature-icon me-3 text-primary fs-3">
-              <i class="bi bi-chat-dots"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Konsultasi Pendampingan</h5>
-              <p class="text-secondary small mb-0">Pendampingan langsung melalui diskusi berkala sehingga strategi yang dijalankan tepat sasaran ke target pembeli.</p>
-            </div>
+          <div class="feature-box h-100 shadow-sm">
+            <div class="fs-1 text-warning mb-2"><i class="bi bi-tags"></i></div>
+            <h5 class="fw-bold">Harga Ramah Kantong</h5>
+            <p class="text-secondary small mb-0">Menu mulai Rp 12.000, bayar non-tunai via QRIS juga bebas biaya admin.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KOMPONEN F: 2 TESTIMONI -->
-  <section id="testimoni" class="py-5">
-    <div class="container py-4">
+  <!-- 6. ULASAN PELANGGAN -->
+  <section id="testimoni" class="py-5 bg-white border-top border-bottom">
+    <div class="container">
       <div class="text-center mb-5">
-        <h6 class="text-primary fw-bold text-uppercase">Kisah Sukses Klien</h6>
-        <h2 class="fw-bold">Apa Kata Pelaku Usaha</h2>
-        <p class="text-secondary">Kepercayaan mitra adalah bukti nyata komitmen kami</p>
+        <h2 class="fw-bold">Kata Teman Nugas</h2>
+        <p class="text-secondary">Apa kata mereka yang sering mampir ke Kopi Sudut.</p>
       </div>
 
       <div class="row g-4 justify-content-center">
-        <!-- Testimoni 1 -->
-        <div class="col-lg-5 col-md-6">
-          <div class="card p-4 border-0 shadow-sm h-100">
-            <div class="mb-3 text-warning">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p class="card-text fst-italic text-secondary mb-4">
-              "Sebelum dibantu Dorizz Creative, akun kopi kami sepi interaksi. Setelah dibuatkan katalog digital dan desain promo baru, pesanan katering lewat WhatsApp naik hampir dua kali lipat dalam sebulan!"
+        <div class="col-md-5">
+          <div class="p-4 border rounded-3 bg-light h-100">
+            <p class="fst-italic text-secondary mb-3">
+              "Tempat paling nyaman buat bikin laporan praktikum. Lagunya nggak berisik, colokan banyak, dan kopinya pas manisnya."
             </p>
-            <div class="d-flex align-items-center">
-              <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 fw-bold">
-                BP
-              </div>
-              <div>
-                <h6 class="fw-bold mb-0">Budi Pratama</h6>
-                <small class="text-muted">Owner Kopi Sahabat Lokal</small>
-              </div>
-            </div>
+            <div class="fw-bold">Dimas Kurniawan</div>
+            <small class="text-muted">Mahasiswa FEBI UIN Salatiga</small>
           </div>
         </div>
-
-        <!-- Testimoni 2 -->
-        <div class="col-lg-5 col-md-6">
-          <div class="card p-4 border-0 shadow-sm h-100">
-            <div class="mb-3 text-warning">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p class="card-text fst-italic text-secondary mb-4">
-              "Landing page buatan Dorizz Creative sangat bersih dan enteng dibuka di HP pelanggan. Penjelasan produk hijab kami jadi rapi dan pembeli tidak ragu lagi untuk langsung klik WhatsApp."
+        <div class="col-md-5">
+          <div class="p-4 border rounded-3 bg-light h-100">
+            <p class="fst-italic text-secondary mb-3">
+              "Kalo nugas kelompok pasti larinya ke sini. Meja besarnya enak dan parkirnya luas. Roti bakarnya juga porsi ngenyangin."
             </p>
-            <div class="d-flex align-items-center">
-              <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 fw-bold">
-                SA
-              </div>
-              <div>
-                <h6 class="fw-bold mb-0">Siti Aisyah</h6>
-                <small class="text-muted">Founder Hijab Daily Syar'i</small>
-              </div>
-            </div>
+            <div class="fw-bold">Anisa Rahma</div>
+            <small class="text-muted">Mahasiswi Salatiga</small>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KOMPONEN G: FORM KONTAK / CALL TO ACTION -->
-  <section id="kontak" class="py-5 bg-light">
-    <div class="container py-4">
+  <!-- 7. FORM RESERVASI MEJA -->
+  <section id="reservasi" class="py-5">
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="bg-white p-4 p-md-5 rounded-3 shadow-sm">
-            <div class="text-center mb-4">
-              <h6 class="text-primary fw-bold text-uppercase">Mulai Langkah Pertama</h6>
-              <h2 class="fw-bold">Siap Mengembangkan Brand Anda?</h2>
-              <p class="text-secondary small">Kirim detail bisnis Anda. Tim kami akan menghubungi dalam waktu maksimal 1x24 jam.</p>
-            </div>
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm p-4 bg-white">
+            <h3 class="fw-bold mb-2 text-center">Reservasi Meja / Kontak</h3>
+            <p class="text-secondary text-center small mb-4">Mau nugas bareng kelompok? Booking meja dulu biar disiapkan tempat dekat colokan.</p>
+            
+            <form>
+              <div class="mb-3">
+                <label for="namaLengkap" class="form-label fw-semibold">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namaLengkap" placeholder="Contoh: Rido Azimi" required>
+              </div>
 
-            <form action="#" method="POST">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="namaLengkap" class="form-label fw-semibold">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="namaLengkap" placeholder="Contoh: Rido Firdaus" required>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="noWhatsapp" class="form-label fw-semibold">Nomor WhatsApp</label>
+                  <input type="tel" class="form-control" id="noWhatsapp" placeholder="0822xxxxxxxx" required>
                 </div>
-                <div class="col-md-6">
-                  <label for="nomorWhatsapp" class="form-label fw-semibold">Nomor WhatsApp</label>
-                  <input type="tel" class="form-control" id="nomorWhatsapp" placeholder="08xxxxxxxxxx" required>
-                </div>
-                <div class="col-12">
-                  <label for="namaBisnis" class="form-label fw-semibold">Nama Usaha / Brand</label>
-                  <input type="text" class="form-control" id="namaBisnis" placeholder="Contoh: Kedai Sambal Nusantara" required>
-                </div>
-                <div class="col-12">
-                  <label for="pilihanLayanan" class="form-label fw-semibold">Layanan yang Dibutuhkan</label>
-                  <select class="form-select" id="pilihanLayanan" required>
-                    <option value="" selected disabled>Pilih opsi layanan...</option>
-                    <option value="sosmed">Social Media Branding</option>
-                    <option value="landingpage">Landing Page UMKM</option>
-                    <option value="desain">Desain Visual & Logo</option>
-                    <option value="paket-lengkap">Paket Lengkap Digitalisasi</option>
+                <div class="col-md-6 mb-3">
+                  <label for="jumlahOrang" class="form-label fw-semibold">Jumlah Orang</label>
+                  <select class="form-select" id="jumlahOrang">
+                    <option selected value="1">1 Orang (Meja Personal)</option>
+                    <option value="2">2 - 3 Orang</option>
+                    <option value="4">4 - 6 Orang (Meja Kelompok)</option>
+                    <option value="7">> 6 Orang</option>
                   </select>
                 </div>
-                <div class="col-12">
-                  <label for="pesanTambahan" class="form-label fw-semibold">Ceritakan Kebutuhan Usaha Anda</label>
-                  <textarea class="form-control" id="pesanTambahan" rows="4" placeholder="Jelaskan target pasar atau kendala utama saat ini..."></textarea>
-                </div>
-                <div class="col-12 text-center mt-4">
-                  <button type="submit" class="btn btn-primary btn-lg fw-semibold px-5 w-100 w-md-auto">
-                    Kirim Formulir Konsultasi
-                  </button>
-                </div>
               </div>
+
+              <div class="mb-3">
+                <label for="waktuDatang" class="form-label fw-semibold">Rencana Waktu Datang</label>
+                <input type="datetime-local" class="form-control" id="waktuDatang" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="catatan" class="form-label fw-semibold">Catatan (Opsional)</label>
+                <textarea class="form-control" id="catatan" rows="3" placeholder="Contoh: Mau ngerjain tugas kelompok, tolong meja dekat colokan..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-warning w-100 py-2 fw-semibold">Kirim Permintaan Booking</button>
             </form>
           </div>
         </div>
@@ -356,47 +263,38 @@
     </div>
   </section>
 
-  <!-- KOMPONEN H: FOOTER -->
-  <footer class="bg-dark text-white pt-5 pb-4">
+  <!-- 8. FOOTER -->
+  <footer class="pt-5 pb-3">
     <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-lg-5 col-md-6">
-          <h5 class="fw-bold text-white mb-3">
-            <i class="bi bi-rocket-takeoff me-2 text-primary"></i>Dorizz Creative
-          </h5>
-          <p class="text-secondary small pe-lg-4">
-            Studio branding dan pengembangan web untuk akselerasi UMKM Indonesia. Dibuat sebagai tugas Web Development Lab - Program Studi Bisnis Digital.
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="fw-bold text-white mb-3">☕ Kopi Sudut Salatiga</h5>
+          <p class="small">
+            Kedai kopi lokal sederhana untuk teman belajar, diskusi kelompok, dan istirahat santai di Salatiga.
           </p>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold text-white mb-3">Tautan Cepat</h6>
-          <ul class="list-unstyled small text-secondary">
-            <li class="mb-2"><a href="#hero" class="text-secondary text-decoration-none hover-link">Beranda</a></li>
-            <li class="mb-2"><a href="#tentang" class="text-secondary text-decoration-none hover-link">Tentang Kami</a></li>
-            <li class="mb-2"><a href="#layanan" class="text-secondary text-decoration-none hover-link">Layanan</a></li>
-            <li class="mb-2"><a href="#kontak" class="text-secondary text-decoration-none hover-link">Hubungi Kami</a></li>
-          </ul>
+        <div class="col-md-3">
+          <h6 class="text-white fw-bold mb-3">Jam Buka</h6>
+          <p class="small mb-1">Senin - Jumat: 10.00 - 23.00 WIB</p>
+          <p class="small mb-0">Sabtu - Minggu: 09.00 - 24.00 WIB</p>
         </div>
-        <div class="col-lg-4 col-md-12">
-          <h6 class="fw-bold text-white mb-3">Kontak & Lokasi</h6>
-          <p class="text-secondary small mb-1"><i class="bi bi-geo-alt me-2 text-primary"></i>Gedung Lab Bisnis Digital, Salatiga</p>
-          <p class="text-secondary small mb-1"><i class="bi bi-envelope me-2 text-primary"></i>halo@dorizzcreative.id</p>
-          <p class="text-secondary small mb-0"><i class="bi bi-whatsapp me-2 text-primary"></i>+62 822-7845-2926</p>
+        <div class="col-md-4">
+          <h6 class="text-white fw-bold mb-3">Alamat & Kontak</h6>
+          <p class="small mb-1">Jl. Kartini No. 24, Sidorejo, Salatiga</p>
+          <p class="small mb-1">WhatsApp: 0822-7845-xxxx</p>
+          <p class="small text-muted mb-0">Instagram: @kopisudut.salatiga</p>
         </div>
       </div>
-      <hr class="border-secondary my-4">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <p class="small text-secondary mb-0">&copy; 2026 Dorizz Creative. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-          <span class="small text-secondary">Tugas Praktik Web Development Lab</span>
-        </div>
+      
+      <hr class="border-secondary mt-4 mb-3">
+      
+      <div class="text-center small text-secondary">
+        <p class="mb-0">&copy; 2026 Kopi Sudut Salatiga — Praktikum Web Development Lab.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap 5 Bundle JS CDN -->
+  <!-- Bootstrap 5 JS Bundle CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
